@@ -2,5 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Xenoforge-GUI" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Xenoforge-dependencies" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Xenoforge-scripts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../xbtoolGUI" vcs="Git" />
   </component>
 </project>
