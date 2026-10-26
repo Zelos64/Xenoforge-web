@@ -5,13 +5,6 @@
   - symphony CLI
 - PHP 8.4+
 
-## Installation
-Symphony CLI
-```
-symfony new Xenoforge-web --webapp
-symfony check:requirements
-```
-
 ## Structure
 - bin : console.php & phpunit.php
 - config : Fichiers de configuration, packages et routes
