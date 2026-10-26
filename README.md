@@ -14,30 +14,21 @@ Etapes en vrac
 Symphony CLI
 ```
 symfony new Xenoforge-web --webapp
-```
-
-``` Composer
-composer require symfony/console
-composer create-project symfony/skeleton:"8.1.*" <project-name>
-composer require webapp
 symfony check:requirements
+composer require --dev symfony/profiler-pack
 ```
-Démarrer les services Docker
-```
-docker compose up
-```
-Créer la base de données
-```
-php bin/console doctrine:database:drop --force
-php bin/console doctrine:database:create
-php bin/console doctrine:migrations:migrate
-php bin/console doctrine:fixtures:load
-```
-Démarrer le serveur PHP
-```
-symfony serve
-composer create-project symfony/skeleton .
-composer require webapp
-```
-recup readme du projet de cours
 
+# Structure du projet
+- bin : Fichiers exécutables (plus particulièrement console)
+- config : Fichiers de configuration
+- migrations : Migrations Doctrine de la base de données
+- public : Point d’entrée de l’application (index.php) et assets publics
+- src
+- - Controller : Objets PHP
+- - Entity (Model) : Objets PHP représentant la base de données
+- - Repository : Classes de requêtage des entités
+- templates : Templates Twig
+- tests : Tests automatisés
+- var : Fichiers autogénérés par Symfony (cache, logs...)
+- vendor : Librairies externes téléchargées via Composer
+- .env : Fichier de configuration de l’environnement
