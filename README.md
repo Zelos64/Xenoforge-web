@@ -1,6 +1,3 @@
-Création du repo
-    Ajout du .gitignore automatique pour Symfony
-
 ## Requirements
 - composer
 - scoop
@@ -9,26 +6,24 @@ Création du repo
 - PHP 8.4+
 
 ## Installation
-Etapes en vrac
-
 Symphony CLI
 ```
 symfony new Xenoforge-web --webapp
 symfony check:requirements
-composer require --dev symfony/profiler-pack
 ```
 
-# Structure du projet
-- bin : Fichiers exécutables (plus particulièrement console)
-- config : Fichiers de configuration
-- migrations : Migrations Doctrine de la base de données
+## Structure
+- bin : console.php & phpunit.php
+- config : Fichiers de configuration, packages et routes
+- migrations : gitignore et Migrations Doctrine de la base de données (inutile pour l'instant)
 - public : Point d’entrée de l’application (index.php) et assets publics
 - src
-- - Controller : Objets PHP
-- - Entity (Model) : Objets PHP représentant la base de données
-- - Repository : Classes de requêtage des entités
-- templates : Templates Twig
-- tests : Tests automatisés
+  - Controller : Objets PHP
+  - Entity (Model) : Objets PHP représentant la base de données
+  - Repository : Classes de requêtage des entités
+- templates : Templates Twig (base, ...)
+- translations
+- tests : Tests automatisés (bootstrap.php)
 - var : Fichiers autogénérés par Symfony (cache, logs...)
 - vendor : Librairies externes téléchargées via Composer
 - .env : Fichier de configuration de l’environnement
