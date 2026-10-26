@@ -10,8 +10,17 @@ Création du repo
 
 ## Installation
 Etapes en vrac
+
+Symphony CLI
 ```
-composer install
+symfony new Xenoforge-web --webapp
+```
+
+``` Composer
+composer require symfony/console
+composer create-project symfony/skeleton:"8.1.*" <project-name>
+composer require webapp
+symfony check:requirements
 ```
 Démarrer les services Docker
 ```
