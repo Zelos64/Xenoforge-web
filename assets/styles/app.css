@@ -7,7 +7,7 @@ nav ul {
     background-color: #333333;
 }
 
-nav ul li a{
+nav ul li a {
     display: block;
     color: white;
     text-align: right;
@@ -20,3 +20,27 @@ body {
     padding: 0;
     background-color: lightgray;
 }
+
+.container {
+    display: flex;
+    width: auto ;
+    box-sizing: border-box;
+    gap: 10px;
+    overflow-x: auto;
+    margin: 5px;
+    padding: 10px;
+    scrollbar-width: none;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.card {
+    flex: 0 0 400px;
+    height: 200px;
+    background-color: cornflowerblue;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
