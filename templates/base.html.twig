@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
@@ -20,7 +20,13 @@
 
         <nav>
             <ul>
-                <li><a href="">Wiki</a></li>
+                <li class="logo-li">
+                    <a href="{{ path('wiki_index') }}">
+                        <img src="{{ asset('title-placeholder.png') }}" alt="Xenoforge Wiki" class="logo-img">
+                    </a>
+                </li>
+                <li><a href="{{ path('wiki_index') }}">Wiki</a></li>
+                <li><a href="{{ path('wiki_show', {'slug': 'test'}) }}">Aller sur la page test</a></li>
                 <li><a href="">Mods</a></li>
                 <li><a href="">Save Editor</a></li>
                 <li><a href="">References</a></li>
