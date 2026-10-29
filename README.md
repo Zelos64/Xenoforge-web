@@ -5,9 +5,9 @@
   - symphony CLI
 - PHP 8.4+
 
-Execute these 2 commands regularly
-symfony check:security
-composer update
+Execute these 2 commands regularly :  
+`symfony check:security`  
+`composer update`
 
 ## Structure
 - bin : console.php & phpunit.php
