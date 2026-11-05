@@ -15,7 +15,7 @@ $bundles = [
     Symfony\Bundle\DebugBundle\DebugBundle::class => ['dev' => true],
 ];
 
-// On n'ajoute les bundles de dev/test que si l'environnement correspond et que les classes existent (ou via la variable d'env)
+// Ajout conditionnel des bundles de développement et de test
 if (($_SERVER['APP_ENV'] ?? 'dev') === 'dev' || ($_SERVER['APP_ENV'] ?? 'dev') === 'test') {
     $bundles[Symfony\Bundle\WebProfilerBundle\WebProfilerBundle::class] = ['dev' => true, 'test' => true];
     $bundles[Symfony\Bundle\DebugBundle\DebugBundle::class] = ['dev' => true, 'test' => true];
