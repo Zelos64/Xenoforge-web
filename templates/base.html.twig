@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app.request.locale }}">
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
@@ -17,11 +17,12 @@
         <script src="https://cdn.jsdelivr.net/npm/idiomorph"></script>
         <script src="https://cdn.jsdelivr.net/npm/frankenphp-hot-reload/+esm" type="module"></script>
         {% endif %}
-
+    </head>
+    <body>
         <nav>
             <ul>
                 <li class="logo-li">
-                    <a href="{{ path('wiki_index') }}">
+                    <a href="{{ path('app_home', {'_locale': app.request.locale}) }}">
                         <img src="{{ asset('title-placeholder.png') }}" alt="Xenoforge Wiki" class="logo-img">
                     </a>
                 </li>
@@ -30,10 +31,10 @@
                 <li><a href="">Mods</a></li>
                 <li><a href="">Save Editor</a></li>
                 <li><a href="">References</a></li>
+                <li><a href="">EMPLACEMENT Langue</a></li>
+                <li><a href="">EMPLACEMENT Rechercher</a></li>
             </ul>
         </nav>
-    </head>
-    <body>
         {% block body %}{% endblock %}
     </body>
 </html>
